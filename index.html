@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Yilong Chen">
+        <title>Meeting Minutes</title>
+        <link rel="icon" href="https://oshima-hina.github.io/Lab2_Starter/res/logo_mygo.png" type="image/png">
+    </head>
+    <body>
+        <header>        
+            <div>
+                <h1><span>Meeting Minutes</span></h1>
+                <h2>Anime fans gathering</h2>
+                <h3>April 2025</h3>
+            </div>
+            nav:
+            <nav>
+                <ul>
+                    
+                    <li><a href="#members">Who's here today?</a></li>
+                    <li><a href="#agenda">Agenda</a></li>
+                    <li><a href="#today-vid">Clip for today</a></li>
+                    <li><a href="#vote">Vote for next clip</a></li>
+                  </ul>
+            </nav>
+        </header>
+
+        <footer>            
+            <p>Yilong Chen <em>CSE110</em></p>
+        </footer>
+
+        <hr>
+
+        <main>
+            <h3 id="members">Who's here today</h3>
+                <ul>
+                    <li>Yilong Chen</li>
+                    <li>Kaname Raana</li>
+                    <li>Aoki Hina</li>
+                    <li>Takamatsu Tomori</li>
+                    <li>Youmiya Hina</li>
+                </ul>
+
+            <section>
+                <h3 id="agenda">Agenda</h3>
+                    <ol>
+                        <li>Introductions</li>
+                        <li><b>Watching clip</b></li>
+                        <li>Discussion</li>
+                        <li>Free chatting</li>
+                        <li>Vote for <strong>next clip</strong></li>
+                    </ol>
+                    
+                    <footer>                       
+                        <p>The <i>last part</i> will use the <em>form</em> on the bottom of this page.</p>
+                        Here<br>is<br>the<br>use<br>of<br>br
+                    </footer>
+            </section>
+                <hr>
+
+            <details open>
+                <summary>More details here(open by default)</summary>
+                    <details>
+                        <summary>Want to know more about this event?</summary>
+                            <p>Sorry! More information is not available now!<br>Come and check it later!</p>
+                    </details>
+                               
+            </details>
+                
+            <h3 id="today-vid">Clip for today</h3>
+                <img src="https://oshima-hina.github.io/Lab2_Starter/res/logo_mygo.png" alt="logo" width= "300"><br>
+                <video controls width= "300"  >
+                    <source src="https://oshima-hina.github.io/Lab2_Starter/res/Henceforth.mp4" type="video/mp4">
+                    video:Henceforth covered by Tomori         
+                </video>
+                <h4>You can also watch here: <a href="https://www.youtube.com/watch?v=Lr-bMZ2hNH0">Link to video</a></h4>
+                <p>Sound only:</p>
+                <audio controls>
+                    <source src="https://oshima-hina.github.io/Lab2_Starter/res/henceforth.mp3" type="audio/mpeg">
+                    Audeo:Henceforth covered by Tomori
+                </audio>    
+
+
+            <section id="vote">
+                <h3>Next clip?</h3>
+                <p>Let us know your thoughts.</p>
+                <form>
+                    <fieldset>
+                        <legend>Vote for next clip</legend>
+                        
+                            <p>Your personal info:</p><br>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required><br><br>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="xxx@yyy"><br><br>
+                            <label for="DOB">Date of birth:</label>
+                            <input type="date" id="DOB" name="DOB"><br><br>          
+                        
+                        <fieldset>
+                            <legend>Please nominate a clip for next gathering:</legend>
+                            <textarea id="next-clip" name="next-clip" rows="5" cols="30" placeholder="Please contain the link to the clip"></textarea><br><br>
+                            <label for="rating">How would you rate today's clip on a scale of 1 to 10?  </label>
+                            <select id="rating" name="rating">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select><br><br> 
+                            <label for="rating-overall">How would you rate today's meeting overall?</label>
+                            <input list="rating-overall-options" id="rating-overall" name="rating-overall" placeholder="Choose or type...">
+                            <datalist id="rating-overall-options">
+                                <option value="Awesome">
+                                <option value="Great">
+                                <option value="Good">
+                                <option value="OK">
+                                <option value="Awful">
+                            </datalist><br>
+
+                            <p>Let's play some funny checkbox!</p>
+                            <input type="checkbox" id="1" name="funny" value="1">
+                            <label for="1">That's funny</label><br>
+                            <input type="checkbox" id="2" name="funny" value="2">
+                            <label for="2">That isn't funny</label><br>
+                            <input type="checkbox" id="3" name="funny" value="3">
+                            <label for="3">I just want to check this one</label><br>
+
+                            <p>Some other funny multiple choice question?</p>
+                            <input type="radio" id="11" name="funny2" value="a">
+                            <label for="11">That's funny too.</label><br>
+                            <input type="radio" id="21" name="funny2" value="b">
+                            <label for="21">Isn't funny</label><br>
+                            <input type="radio" id="31" name="funny2" value="c">
+                            <label for="31">idk</label><br><br>
+                        </fieldset>    
+                        <!-- Submit Button -->
+                        <button type="submit">Click this button <strong>really hard</strong> to <b>submit</b>!</button>  
+                    </fieldset>        
+                </form>
+            </section>
+        </main>      
+        <footer>            
+            <p>Yilong Chen for CSE110. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
