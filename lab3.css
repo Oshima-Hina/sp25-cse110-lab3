@@ -7,7 +7,7 @@ body {
     color: #66ccff;
   }
 #date1{
-    color:rgba(0,0,0,50);
+    color:rgba(0,0,0,0.5);
     background-color:rgb(229, 229, 229)
 }
 * {
@@ -53,7 +53,7 @@ button.primary {
     background-color: #3388bb;
 }
 section:has(hr) {
-    border: 2px solid color-mix(srgb, red 50%, yellow 50%);
+    border: 2px solid color-mix(in srgb, red 50%, yellow 50%);
 }
 .Agenda{
     padding:1rem;
@@ -64,13 +64,9 @@ section:has(hr) {
         text-decoration: underline;
 
         text-align: center; 
-        
-    }
-}
-.Agenda{
-    padding:1rem;
-    p:hover{
-        color:color(srgb 0.8 0.5 0.5 / 0.8) ;
+        &:hover{
+            color:color(srgb 0.8 0.5 0.5 / 0.8) ;
+        }
     }
 }
 
