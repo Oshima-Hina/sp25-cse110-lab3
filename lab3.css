@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+.h {
+    background-color: white;
+    color: #66ccff;
+  }
+#date1{
+    color:rgba(0,0,0,50);
+    background-color:rgb(229, 229, 229)
+}
+* {
+    box-sizing: border-box;
+
+  }
+p{
+    color:gray
+}
+input[type="text"] {
+    border: 2px solid green;
+    padding: 0.5rem;
+  }
+a:hover {
+    color: green;
+  }
+
+.pic:hover {
+    transition: transform 0.6s ease;
+    transform: scale(2.1)translateX(100px); 
+
+}
+h1, h3, p {
+    font-family: 'Arial', sans-serif;
+  }
+  
+main footer{
+    color:hsl(300, 100%, 25%)
+}
+ul > li{
+    color:#005555
+}
+h3 ~ h3{
+    color:#3388bb
+}
+li + li{
+    color:#006666;
+    font-size: 12pt;/* absolute */
+    margin: 0cm;/* absolute */
+    max-width: 400px;
+}
+button.primary {
+    background-color: #3388bb;
+}
+section:has(hr) {
+    border: 2px solid color-mix(in srgb, red 50%, yellow 50%);
+}
+.Agenda{
+    padding:1rem;
+    p{
+        /* --text-color:green; */
+        color:var(--text-color, blue);
+        background-color: rgba(135, 206, 235, 0.5);
+        text-decoration: underline;
+
+        text-align: center; 
+        &:hover{
+            color:color(srgb 0.8 0.5 0.5 / 0.8) ;
+        }
+    }
+}
+
+.Agenda li:nth-child(2) {
+    font-size: 1.2em; /*relative*/
+    padding-left: 0.5rem;/*relative*/
+    display: inline-block; 
+    padding: 10px 20px;
+    background-color: lightblue;
+}
+.Agenda li:nth-child(3){
+    display: inline;
+}
+.mem +ul li:nth-child(3) {
+    &:active{
+        font-size:2.0em;
+    }
+}
+.mem +ul li:nth-child(6) {
+    color:white;
+    &:hover{
+        color:blue;
+    }
+    margin-top: 0%; /*relative*/
+    font-size: 1.5em;
+}
+
+.box {
+    margin-left: 10px;
+    margin: 20px 10px 20px;
+    padding-left: 10px;
+    padding: 20px 10px 20px;
+    border: 1px solid #999;
+    border-radius: 8px;
+  }
+.vid{
+    width: 800px;
+    height: 600px;
+    max-width: 100%;
+    min-width: 200px;
+    background-color: #d0f4ff;
+}
+.real_vid{
+    position: relative;
+    top: 10px;
+
+}
+.topic{
+    position: fixed;
+    top: 0;
+    left: 30px;
+    color:#66ccff;
+    background-color: white
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+  
+.item {
+    padding: 1rem;
+    flex: 1;                     
+    text-align: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
+  
+.grid-item {
+    padding: 1rem;
+}
+@media (max-width: 768px) {
+    html {
+      font-size: 0.9rem;
+    }
+    img{
+        height:auto;
+    }
+}  
+  

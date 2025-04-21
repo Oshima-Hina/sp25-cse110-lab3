@@ -5,14 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Yilong Chen">
         <title>Meeting Minutes</title>
-        <link rel="icon" href="https://oshima-hina.github.io/Lab2_Starter/res/logo_mygo.png" type="image/png">
+        <link rel="icon" href="/res/logo_mygo.png" type="image/png">
+        <link rel="stylesheet" href="lab3.css">
     </head>
     <body>
         <header>        
-            <div>
-                <h1><span>Meeting Minutes</span></h1>
-                <h2>Anime fans gathering</h2>
-                <h3>April 2025</h3>
+            <div class="box">
+                <h1 class="topic"class="h"><span>Meeting Minutes</span></h1>
+                <h2 class="h">Anime fans gathering</h2>
+                <h3 id="date1">April 2025</h3>
             </div>
             nav:
             <nav>
@@ -33,20 +34,22 @@
         <hr>
 
         <main>
-            <h3 id="members">Who's here today</h3>
+            <h3 class="mem"id="members">Who's here today</h3>
                 <ul>
                     <li>Yilong Chen</li>
                     <li>Kaname Raana</li>
                     <li>Aoki Hina</li>
                     <li>Takamatsu Tomori</li>
                     <li>Youmiya Hina</li>
+                    <li>Oshima Hina</li>
                 </ul>
 
-            <section>
+            <section class="Agenda">
                 <h3 id="agenda">Agenda</h3>
                     <ol>
                         <li>Introductions</li>
                         <li><b>Watching clip</b></li>
+                        <li>inline</li>
                         <li>Discussion</li>
                         <li>Free chatting</li>
                         <li>Vote for <strong>next clip</strong></li>
@@ -54,11 +57,12 @@
                     
                     <footer>                       
                         <p>The <i>last part</i> will use the <em>form</em> on the bottom of this page.</p>
-                        Here<br>is<br>the<br>use<br>of<br>br
+                        Here<br>is<br>the<br>use<br>of<br>< br></p>
                     </footer>
             </section>
+            <section>
                 <hr>
-
+            </section>
             <details open>
                 <summary>More details here(open by default)</summary>
                     <details>
@@ -67,20 +71,20 @@
                     </details>
                                
             </details>
-                
+            <section class="vid"> 
             <h3 id="today-vid">Clip for today</h3>
-                <img src="https://oshima-hina.github.io/Lab2_Starter/res/logo_mygo.png" alt="logo" width= "300"><br>
-                <video controls width= "300"  >
-                    <source src="https://oshima-hina.github.io/Lab2_Starter/res/Henceforth.mp4" type="video/mp4">
+                <img src="/res/logo_mygo.png" alt="logo" width= "300" class="pic"><br>
+                <video class="real_vid" controls width= "300"  >
+                    <source src="/res/Henceforth.mp4" type="video/mp4">
                     video:Henceforth covered by Tomori         
                 </video>
                 <h4>You can also watch here: <a href="https://www.youtube.com/watch?v=Lr-bMZ2hNH0">Link to video</a></h4>
                 <p>Sound only:</p>
                 <audio controls>
-                    <source src="https://oshima-hina.github.io/Lab2_Starter/res/henceforth.mp3" type="audio/mpeg">
+                    <source src="/res/henceforth.mp3" type="audio/mpeg">
                     Audeo:Henceforth covered by Tomori
                 </audio>    
-
+            </section>   
 
             <section id="vote">
                 <h3>Next clip?</h3>
@@ -132,15 +136,15 @@
                             <label for="3">I just want to check this one</label><br>
 
                             <p>Some other funny multiple choice question?</p>
-                            <input type="radio" id="11" name="funny2" value="a">
-                            <label for="11">That's funny too.</label><br>
-                            <input type="radio" id="21" name="funny2" value="b">
-                            <label for="21">Isn't funny</label><br>
-                            <input type="radio" id="31" name="funny2" value="c">
-                            <label for="31">idk</label><br><br>
+                            <input type="radio" id="1" name="funny2" value="a">
+                            <label for="1">That's funny too.</label><br>
+                            <input type="radio" id="2" name="funny2" value="b">
+                            <label for="2">Isn't funny</label><br>
+                            <input type="radio" id="3" name="funny2" value="c">
+                            <label for="3">idk</label><br><br>
                         </fieldset>    
                         <!-- Submit Button -->
-                        <button type="submit">Click this button <strong>really hard</strong> to <b>submit</b>!</button>  
+                        <button class="primary"type="submit">Click this button <strong>really hard</strong> to <b>submit</b>!</button>  
                     </fieldset>        
                 </form>
             </section>
@@ -148,5 +152,16 @@
         <footer>            
             <p>Yilong Chen for CSE110. All rights reserved.</p>
         </footer>
+        <div class="flex-container">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+          </div>
+          
     </body>
 </html>
